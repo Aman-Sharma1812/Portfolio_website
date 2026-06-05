@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import mysql.connector as mycon
+import os
 
 app = Flask(__name__) #Create a portfolio app
 
@@ -7,7 +8,7 @@ app = Flask(__name__) #Create a portfolio app
 mydb = mycon.Connect(
     host = "localhost",
     user = "root",
-    password = "bgsb1812#C",
+    password = "xxxxxxxxxxx",
     database = "portfolio_db"
 ) 
 
