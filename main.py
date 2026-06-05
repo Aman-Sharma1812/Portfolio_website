@@ -5,14 +5,14 @@ import os
 app = Flask(__name__) #Create a portfolio app
 
 #=============Establishing a connection between Python and MySQL=============================
-mydb = mycon.Connect(
-    host = "localhost",
-    user = "root",
-    password = "xxxxxxxxxxx",
-    database = "portfolio_db"
-) 
+# mydb = mycon.Connect(
+#     host = "localhost",
+#     user = "root",
+#     password = "xxxxxxxxxxx",
+#     database = "portfolio_db"
+# ) 
 
-db_cursor = mydb.cursor() #Create the cursor object that helps to  executes the SQL query
+# db_cursor = mydb.cursor() #Create the cursor object that helps to  executes the SQL query
 
 @app.route("/")
 def home():
@@ -38,8 +38,8 @@ def contact():
         Mobile_No,
         Email_Subject
     )
-    db_cursor.execute(insert_query, values)
-    mydb.commit()
+    # db_cursor.execute(insert_query, values)
+    # mydb.commit()
 
     return render_template('index.html',     
         full_name=User_Name,
