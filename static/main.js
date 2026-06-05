@@ -11,7 +11,7 @@ menuicon.onclick = () => {
 // ======================Toggle icon navbar==================================
 
 let section = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+let navLinks = document.querySelectorAll('.navbar a');
 
 window.onscroll = () => {
     section.forEach(sec => {
@@ -20,12 +20,19 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id')
 
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach.apply(links => {
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach((links) => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
+
+            document.querySelector('header nav a[href*="' + id + '"]')?.classList.add('active');
         };
+    });
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuicon.classList.remove('fa-xmark');
+            navbar.classList.remove('active');
+        });
     });
 
     // ======================Sticky navbar==================================
