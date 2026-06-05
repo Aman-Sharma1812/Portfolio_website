@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmanSharma1812</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+</head>
+
+<body>
+    <!-- ====================================Header Design=================================== -->
+    <header class="header">
+        <a href="#" class="logo">A.SHARMA</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- ====================================Home Section=================================== -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Aman Sharma</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>
+                Turning data into insights, code into solutions, and ideas into impact. Passionate about Data Science,
+                Analytics, and Backend Development, I building innovative applications that solve real-world business
+                problems and drive smarter decisions.
+            </p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/aman_sharma7265/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/aman-sharma-ds1812/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Aman-Sharma1812"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.kaggle.com/amansharma1812"><i class="fa-brands fa-kaggle"></i></a>
+            </div>
+            <a href="{{url_for('static', filename = 'assets/docs/AmanSharma_InternshalaResume.pdf')}}" class="btn">View
+                Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="{{url_for('static', filename = 'assets/images/myphoto.jpeg')}}" alt="Aman's photo1">
+        </div>
+    </section>
+
+
+    <!-- ====================================About Section=================================== -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{{url_for('static', filename = 'assets/images/myphoto2.jpeg')}}" alt="Aman's photo2">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>
+                Passionate about Data, Code, Technology, and Innovation, I build scalable applications and data-driven
+                solutions that transform complex information into meaningful insights and real-world impact.
+            </p>
+            <a href="{{url_for('static', filename = 'assets/docs/Linkedin_Profile.pdf')}}" class="btn">Read
+                more</a><br><br>
+
+            <hr><br>
+
+            <div class="skills">
+                <h3 class="subtitle">
+                    <span><i class="fa-solid fa-book-bookmark"></i></span>
+                    <span>Skills</span>
+                </h3>
+                <br>
+                <ul class="items" style="list-style-type: none; padding: 0; margin: 0;">
+                    <li class="item">Excel</li>
+                    <li class="item">Power BI</li>
+                    <li class="item">Python</li>
+                    <li class="item">HTML</li>
+                    <li class="item">CSS</li>
+                    <li class="item">Flask</li>
+                    <li class="item">JavaScript</li>
+                    <li class="item">Node.js</li>
+                </ul>
+                <br>
+            </div>
+            <hr>
+            <p>
+                <span><b><i>Education</i></b></span>
+                <br>
+                &#9679; Indian Institute of Technology Madras <br>&nbsp;&nbsp;&nbsp;&nbsp;&#8627;
+                Bachelor of Science - Data Science and Application · (January 2026 - Present)
+                <br><br>
+                &#9679; Sanskriti University <br>&nbsp;&nbsp;&nbsp;&nbsp;&#8627;
+                Bachelor of Technology, CSE - AI and Machine Learning · (August 2024 - Present)
+            </p>
+        </div>
+    </section>
+
+    <!-- ====================================Service Section=================================== -->
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-chart-line service_icon"></i>
+                <h3>Data Analytics</h3>
+                <p class="service_description">
+                    Transform raw and inconsistent data into clean, reliable datasets ready for analysis and
+                    decision-making Dashboards.
+                </p>
+                </p>
+                <a href="/#contact" class="btn">Contact Us</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-code service_icon"></i>
+                <h3>Backend Development</h3>
+                <p class="service_description">
+                    Develop secure, scalable backend systems, APIs, and server-side applications for modern web
+                    platforms.
+                </p>
+                <a href="/#contact" class="btn">Contact Us</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-database service_icon"></i>
+                <h3>Database Integration</h3>
+                <p class="service_description">
+                    Design, connect, and optimize databases to ensure efficient data storage, retrieval, and management.
+                </p>
+                <a href="/#contact" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================Projects Section=================================== -->
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="{{url_for('static', filename = 'assets/images/Data_Analysis_Dashboard_using_Excel-1.png')}}"
+                    alt="">
+                <div class="project-layer">
+                    <h4>Data Analysis</h4>
+                    <p>
+                        Built an Excel dashboard analyzing sales, profit, trends, and product performance to support
+                        decisions.
+                    </p>
+                    <a href="https://github.com/Aman-Sharma1812/Products_Sales-Profit_Analysis_Excel.git"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="{{url_for('static', filename = 'assets/images/Data_Analysis_Dashboard_using_Power-BI-1.png')}}"
+                    alt="">
+                <div class="project-layer">
+                    <h4>Data Analysis</h4>
+                    <p>
+                        Interactive Power BI dashboard analyzing sales, profit, customers, and regional performance of a
+                        retail superstore with actionable business insights.
+                    </p>
+                    <a href="https://github.com/Aman-Sharma1812/Superstore_Performance_Dashboard_using_Power-BI.git"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="{{url_for('static', filename = 'assets/images/Data_Analysis_Dashboard_using_MySQL-1.png')}}"
+                    alt="">
+                <div class="project-layer">
+                    <h4>Data Analysis</h4>
+                    <p>
+                        Employee Management Analysis project built using MySQL. It demonstrates
+                        database design, data storage, and query operations for managing employee records.
+                    </p>
+                    <a href="https://github.com/Aman-Sharma1812/Employee-Data_Analysis-SQL.git"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================Contact Section=================================== -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="/contact" method="POST">
+            <input type="hidden" name="access_key">
+            <div class="input-box">
+                <input type="text" name="User_Name" id="User_Name" placeholder="Full Name" required>
+                <input type="email" name="Email" id="Email" placeholder="Email Address" required>
+                <input type="number" name="Mobile_No" id="Mobile_No" placeholder="Mobile No." required>
+                <input type="text" name="Email_Subject" id="Email_Subject" placeholder="Email Subject" maxlength="50"
+                    required>
+            </div>
+            <textarea name="Message" rows="10" cols="30" placeholder="Your Message..." id="Message" maxlength="1000"
+                required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+
+    <!-- ====================================Footer Section=================================== -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by @amansharma | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- ==========Scroll Reveal========================= -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ==========Typed ja (Auto typing)========================= -->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <!-- ==========Main JavaScript========================= -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init({
+            publicKey: "fKK9l4XMNWsy0ioLt",
+        })
+    </script>
+</body>
+
+</html>
